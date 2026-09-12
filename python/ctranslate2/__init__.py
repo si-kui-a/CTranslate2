@@ -103,8 +103,8 @@ except ImportError as e:
     else:
         raise
 
-from ctranslate2 import models
-from ctranslate2.version import __version__
+from ctranslate2 import models  # noqa: E402
+from ctranslate2.version import __version__  # noqa: E402
 
 # converters and specs import torch (and, for converters, transformers) at module level.
 # Those dependencies are only needed to convert models, not to run inference, so import
